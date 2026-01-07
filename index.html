@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoBharat | Indian Automobile Marketplace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Poppins', sans-serif; background: #f5f7fa; color: #333; }
+    header { background: #0a1a2f; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; font-size: 26px; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero { background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('https://images.unsplash.com/photo-1542362567-b07e54358753'); background-size: cover; background-position: center; color: #fff; padding: 80px 40px; text-align: center; }
+    .hero h2 { font-size: 40px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; margin-bottom: 30px; }
+    .hero button { padding: 14px 30px; background: #ff6b00; border: none; color: #fff; font-size: 16px; border-radius: 6px; cursor: pointer; }
+
+    .section { padding: 60px 40px; }
+    .section h3 { text-align: center; font-size: 28px; margin-bottom: 40px; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+    .card { background: #fff; border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,.08); padding: 25px; text-align: center; }
+    .card img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; }
+    .card h4 { margin: 15px 0 8px; }
+    .price { color: #ff6b00; font-weight: 600; }
+
+    .features { background: #fff; }
+    .features ul { max-width: 800px; margin: auto; list-style: none; padding: 0; }
+    .features li { padding: 12px 0; border-bottom: 1px solid #eee; }
+
+    footer { background: #0a1a2f; color: #fff; padding: 30px 40px; text-align: center; }
+    footer p { margin: 5px 0; font-size: 14px; }
+
+    @media(max-width:600px){
+      .hero h2 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AutoBharat</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Cars</a>
+    <a href="#">Bikes</a>
+    <a href="#">Electric</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>India's Trusted Automobile Platform</h2>
+  <p>Compare, explore & buy cars and bikes made for Indian roads</p>
+  <button>Explore Vehicles</button>
+</section>
+
+<section class="section">
+  <h3>Popular in India</h3>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9" alt="Car">
+      <h4>Maruti Suzuki Brezza</h4>
+      <p class="price">₹8.3 – 14.1 Lakh</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39" alt="Bike">
+      <h4>Royal Enfield Classic 350</h4>
+      <p class="price">₹1.9 – 2.3 Lakh</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" alt="EV">
+      <h4>Tata Nexon EV</h4>
+      <p class="price">₹14.7 – 19.9 Lakh</p>
+    </div>
+  </div>
+</section>
+
+<section class="section features">
+  <h3>Why AutoBharat?</h3>
+  <ul>
+    <li>✔ Prices & mileage tailored for Indian market</li>
+    <li>✔ Petrol, Diesel, CNG & Electric options</li>
+    <li>✔ EMI calculator & on-road price estimates</li>
+    <li>✔ Verified dealers across India</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 AutoBharat.com</p>
+  <p>Made for Indian automobile buyers 🇮🇳</p>
+</footer>
+
+</body>
+</html>
